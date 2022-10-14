@@ -1,0 +1,13 @@
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+public class Sample {
+   public static void main(String args[]) throws ParseException {  
+      String date_string = "2007-25-06";
+      //Instantiating the SimpleDateFormat class
+      SimpleDateFormat formatter = new SimpleDateFormat("yyyy-dd-MM");      
+      //Parsing the given String to Date object
+      Date date = formatter.parse(date_string);      
+      System.out.println("Date value: "+date);
+   }
+}
